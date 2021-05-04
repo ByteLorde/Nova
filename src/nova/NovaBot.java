@@ -63,7 +63,6 @@ public abstract class NovaBot extends NovaScript {
         NovaScript activeScript = this.scripts[0];
         while (listIterator.hasNext()) {
             NovaScript script = listIterator.next();
-            log(script.scriptName + " is complete: " + script.isComplete());
             if (script.isComplete()) {
                 activeScript = script;
                 break;
